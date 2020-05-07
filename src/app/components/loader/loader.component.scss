@@ -1,0 +1,141 @@
+:host {
+  .loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    &.yellow {
+      p {
+        color: #FFED4A;
+      }
+      .loader {
+        color: #FFED4A;
+      }
+    }
+    &.blue {
+      p {
+        color: #3490DC;
+      }
+      .loader {
+        color: #3490DC;
+      }
+    }
+    &.red {
+      p {
+        color: #E3342F;
+      }
+      .loader {
+        color: #E3342F;
+      }
+    }
+    &.green {
+      p {
+        color: #38C172;
+      }
+      .loader {
+        color: #38C172;
+      }
+    }
+    &.purple {
+      p {
+        color: #9561E2;
+      }
+      .loader {
+        color: #9561E2;
+      }
+    }
+    &.black {
+      p {
+        color: #22292F;
+      }
+      .loader {
+        color: #22292F;
+      }
+    }
+    &.white {
+      p {
+        color: #F8FAFC;
+      }
+      .loader {
+        color: #F8FAFC;
+      }
+    }
+    &.orange {
+      p {
+        color: #F6993F;
+      }
+      .loader {
+        color: #F6993F;
+      }
+    }
+    &.indigo {
+      p {
+        color: #6574CD;
+      }
+      .loader {
+        color: #6574CD;
+      }
+    }
+    p {
+      color: #6574CD;
+    }
+    .loader,
+    .loader:before,
+    .loader:after {
+      border-radius: 50%;
+      width: 1.5em;
+      height: 1.5em;
+      animation: load7 1.8s infinite ease-in-out;
+      -webkit-animation: load7 1.8s infinite ease-in-out;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+    .loader {
+      color: #6574CD;
+      font-size: .7rem;
+      margin: 0rem auto 3rem;
+      position: relative;
+      text-indent: -9999em;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+    .loader:before,
+    .loader:after {
+      content: '';
+      position: absolute;
+      top: 0;
+    }
+    .loader:before {
+      left: -2.5em;
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    .loader:after {
+      left: 2.5em;
+    }
+    @-webkit-keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
+    }
+    @keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
+    }
+  }
+}

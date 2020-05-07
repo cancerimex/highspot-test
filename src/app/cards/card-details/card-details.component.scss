@@ -1,0 +1,58 @@
+@import '../../../styles/mixins';
+:host {
+  .card {
+    margin-bottom: 20px;
+    background-color: rgba(21,21,21,0.5);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 60%);
+    position: relative;
+    letter-spacing: 2px;
+    border: 1px solid #000;
+    background-image: url(../../../assets/bg-ice.jpg);
+    background-size: auto;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    transition: transform .2s;
+    max-width: 280px;
+    min-height: 560px;
+    &:hover {
+      transform: scale(1.07);
+      border: 1px solid #444444;
+    }
+    .card-overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 60%);
+    }
+    .details {
+      position: relative;
+      padding: 20px;
+      z-index: 2;
+      .image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        img {
+          width: 80%;
+        }
+      }
+      .name {
+        font-size: 1.25rem;
+        font-weight: 600;	
+      }
+      .text {
+        color: #9ea6ad;
+        font-size: 0.875rem;
+        margin-bottom: 2em;
+      }
+      .meta {
+        display: flex;
+        justify-content: space-between;
+      }
+      .set, .type {
+        font-size: 0.75rem;
+        color: #9ea6ad;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

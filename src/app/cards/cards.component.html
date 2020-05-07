@@ -1,0 +1,14 @@
+<app-loader *ngIf="loading"></app-loader>
+<div class="container" *ngIf="!loading && cards">
+  <div class="search-bar">
+    <form [formGroup]="form">
+      <input type="text" name="search" placeholder="Search by name..." id="search" formControlName="search" aria-required="false" aria-invalid="false">
+      <span class="label-wrapper">
+        <label class="label" for="search" aria-owns="search">Search by name...</label>
+      </span>
+    </form>
+  </div>
+  <div class="grid-container">
+    <app-card-details *ngFor="let card of cards | filter: search:'name'" [card]="card"></app-card-details>
+  </div>
+</div>

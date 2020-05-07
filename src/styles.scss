@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import './styles/mixins';
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans",Tahoma,Geneva,sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #f7fbff;
+  background-color: #000000;
+}
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(./assets/bg-ice.jpg);
+  background-size: cover;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  &:before, &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  @include for-size(medium-devices) {    
+    width: 750px
+  }
+  @include for-size(large-devices) {    
+    width: 970px
+  }
+  @include for-size(xlarge-devices) {    
+    width: 1170px
+  }
+}
