@@ -35,3 +35,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+
+## Additional/Future Changes
+
+- Better error handling
+- Tried using css-grid , probably should have used flex
+- Create a `colors.scss` file to store color variables
+- Card design could still get another pass, maybe move the set into a ribon across the top
+- Some image sizes are different, should handle that in the future to make it more uniform
+- Image placeholders while loading
+- Scroll loading is triggered when you filter the cards, more testing needed
+- Sometimes the card name return has a `|` at the end of the name, could filter that out
+- Allow more sorting and filtering
+- Marble to test Observables
+- Use ngx-infinite-scroll instead of rolling my own, but wanted to give it a go
+- Implement api caching
+- Save cards into localstorage
